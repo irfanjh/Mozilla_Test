@@ -3,7 +3,7 @@ package building;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;//
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -20,10 +20,10 @@ public class BuildingMozila {
 
 
     //  System.setProperty("webdriver.gecko.driver", "Downloads/geckodriver.exe");//
-        desc = DesiredCapabilities.firefox();
+        desc = DesiredCapabilities.chrome();
         //URL grid_url = new URL("http://10.171.97.175:4444/wd/hub");
         driver = new RemoteWebDriver(new URL("http://10.171.97.175:4444/wd/hub"),desc);
-       driver = new FirefoxDriver();
+       driver = new ChromeDriver();
        // driver =  new ChromeDriver();
         driver.get("https://www.google.com");
         //to make the window maximize//
